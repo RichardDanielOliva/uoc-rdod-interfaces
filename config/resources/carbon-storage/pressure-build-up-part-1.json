@@ -1,0 +1,25 @@
+{
+    "section": "carbonStorage",
+    "title": "Pressure Build-Up - I",
+    "resume": "Injection triggers pressure increase in the reservoir. How does that pressure increase with time and how far does it reach?",
+    "description": [
+        {
+            "type": "text",
+            "content": "In this video, we review the pressure build up in a reservoir under injection. This is one of the major risks in CCS projects as it deals with the integrity of the caprock (ensuring containment of the CO2) along with the potential leak of CO2 to shallower formations or to the surface. We start from the models previously built (for reservoir capacity and plume migration) and encode the pressure build up equation in the incompressible region of the reservoir. We show how increase in injection rate affects the pressure build up over time from a few bars to over 100 bars. TKRISK allows to account for uncertainty propagation with time.This model can be used by operators to avoid crossing frac gradients."
+        }
+    ],
+    "product": "tkrisk",
+    "image": "pressure-build-up-part-1",
+    "icon": "carbon",
+    "videoUrl": "https://www.youtube.com/embed/O-mE8uS0Xyc",
+    "nextVideo": "pressure-build-up-part-2",
+    "relatedVideos": ["pressure-build-up-part-2", "plume-migration-part-1", "land-capacity-part-1", "decision-part-1"],
+    "relatedConten": [{
+        "title": "Related Products",
+        "items": [ { "title": "TKRISK", "url": "/products/tkrisk"}]
+    },
+    {
+        "title": "References",
+        "items": [ { "title": "", "url": ""} ]
+    }]
+}

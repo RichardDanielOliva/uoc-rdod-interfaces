@@ -1,0 +1,25 @@
+{
+    "section": "carbonStorage",
+    "title": "Pressure Build-Up - II",
+    "resume": "Injection triggers pressure increase in the reservoir. How does that pressure increase with time and how far does it reach?",
+    "description": [
+        {
+            "type": "text",
+            "content": "In the second part of the pressure build up analysis, we focus on multi-phase effects. We see how the injection of CO2 over time leads to the formation of a ''cushion'' zone that absorbs part of the pressure build-up. This leads to important update in the prediction of pressure evolution at various locations through time. Pressure build-up monitoring is very important as it may trigger breach of containment, leaks to other formations or fault/fractures activation. We show how TKRISK can be used to model the propagation of pressure pulses around injection sites. The non-linear coupling of pressure and saturation can be modeled using a mixture of analytical models and simple regressions. The evolution through time can be formulated very simply and efficiently by sampling the network at different time steps. This leads to a transparent model that captures the major uncertainties and propagates them through to produce robust probabilistic evaluations of quantities of interest."
+        }
+    ],
+    "product": "tkrisk",
+    "image": "pressure-build-up-part-2",
+    "icon": "carbon",
+    "videoUrl": "https://www.youtube.com/embed/ebchRSkUXjs",
+    "nextVideo": "pressure-build-up-part-1",
+    "relatedVideos": ["pressure-build-up-part-1", "plume-migration-part-1", "land-capacity-part-1", "decision-part-1"],
+    "relatedContent": [{
+        "title": "Related Products",
+        "items": [ { "title": "TKRISK", "url": "/products/tkrisk"}]
+    },
+    {
+        "title": "References",
+        "items": [ { "title": "", "url": ""} ]
+    }]
+}

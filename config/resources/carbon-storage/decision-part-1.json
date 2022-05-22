@@ -1,0 +1,25 @@
+{
+    "section": "carbonStorage",
+    "title": "Decision - I",
+    "resume": "Calibrated models can be used for decision support. the Inference module of TKRISK unlocks powerful capabilities such as  evidence propagation and value of information",
+    "description": [
+        {
+            "type": "text",
+            "content": "In this video, we focus on the utilization of Bayesian networks for inference. Graphs provide an intuitive framework for reasoning in terms of decision making under uncertainty and we demonstrate this with TKRISK. We leverage the modeling work previously accomplished and define three major risks associated with land area, plume migration and pressure build-up. We define threshold values for these three risks and discretize the graphs by making all nodes categorical. This trigger the inference capabilities of TKRISK which allow to compute marginals of parents node based on observations made at children nodes. Evidence propagation is a powerful tool in Bayesian statistics as it allows to update prior knowledge based on posterior observation. We illustrate with the two sites example. The question being: How does discovering that one site is suitable impacts the probability that a second site is suitable? This correlation between the two sites can be intuitively modeled using TKRISK."
+        }
+    ],
+    "product": "tkrisk",
+    "image": "decision-part-1",
+    "icon": "carbon",
+    "videoUrl": "https://www.youtube.com/embed/W9FpTdHZSOA",
+    "nextVideo": "decision-part-2",
+    "relatedVideos": ["decision-part-2", "decision-part-3", "land-capacity-part-1", "pressure-build-up-part-1"],
+    "relatedContent": [{
+        "title": "Related Products",
+        "items": [ { "title": "TKRISK", "url": "/products/tkrisk"}]
+    },
+    {
+        "title": "References",
+        "items": [ { "title": "", "url": ""} ]
+    }]
+}

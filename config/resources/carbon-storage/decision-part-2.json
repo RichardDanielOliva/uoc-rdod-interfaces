@@ -1,0 +1,25 @@
+{
+    "section": "carbonStorage",
+    "title": "Decision - II",
+    "resume": "Calibrated models can be used for decision support. The Inference module of TKRISK unlocks powerful capabilities such as  evidence propagation and value of information",
+    "description": [
+        {
+            "type": "text",
+            "content":"In the second part of this decision process, we focus on evidence propagation and Value of Information (VoI). Information is typically acquired to reduce risk. It comes at a cost and the question is: Is the cost incurred worth the gain for a specific project? In the case of CCS, information that would help determining with more certainty that a site is fit (or not) for injection would be the injectivity and pore space. Both quantities:<br>- have an impact on the main risk factors (Plume migration and Pressure build-up for injectivity and Land Area and plume migration for pore space). <br>- Are uncertain<br>- Can be measured through some additional test Drill stem Test (DST) for injectivity and Seismic acquisition for pore space<br>We establish how the results of these measurements (positively or negatively) impact the underlying risk factor and by connection, the goodness of the site.<br>We observe that while DST has a local effect, Seismic information informs on the Structure which affects both sites. We have the choice between a strong, local evidence and a weak, global one."
+        }
+    ],
+    "product": "tkrisk",
+    "image": "decision-part-2",
+    "icon": "carbon",
+    "videoUrl": "https://www.youtube.com/embed/5Q0AgNT4sME",
+    "nextVideo": "decision-part-3",
+    "relatedVideos": ["decision-part-1", "decision-part-3", "land-capacity-part-1", "pressure-build-up-part-1"],
+    "relatedContent": [{
+        "title": "Related Products",
+        "items": [ { "title": "TKRISK", "url": "/products/tkrisk"}]
+    },
+    {
+        "title": "References",
+        "items": [ { "title": "", "url": ""} ]
+    }]
+}

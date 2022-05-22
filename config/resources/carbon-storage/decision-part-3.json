@@ -1,0 +1,25 @@
+{
+    "section": "carbonStorage",
+    "title": "Decision - III",
+    "resume": "Calibrated models can be used for decision support. The Inference module of TKRISK unlocks powerful capabilities such as  evidence propagation and value of information",
+    "description": [
+        {
+            "type": "text",
+            "content":"In this video, we complete the decision analysis part of this example by measuring the anticipated impact of each action we can take on the field. We explore a scenario where we have a limited set of decisions we could take (drilling, acquiring more data, abandoning) and based on our calibrated model, we can compute not only the probability of various outcomes for each decision, but also the updated probabilities on connected nodes. We can therefore build a decision tree that truly takes into account the consequences of each action and measure the expected value associated with each. This video demonstrates how TKRISK can also be used to build decision trees and compute the most favorable path along with the value of information in the case of seismic acquisition."
+        }
+    ],
+    "product": "tkrisk",
+    "image": "decision-part-3",
+    "icon": "carbon",
+    "videoUrl": "https://www.youtube.com/embed/HAuVeqZt6Ls",
+    "nextVideo": "plume-migration-part-1",
+    "relatedVideos": ["decision-part-1", "decision-part-2", "plume-migration-part-1", "land-capacity-part-1"],
+    "relatedContent": [{
+        "title": "Related Products",
+        "items": [ { "title": "TKRISK", "url": "/products/tkrisk"}]
+    },
+    {
+        "title": "References",
+        "items": [ { "title": "", "url": ""} ]
+    }]
+}

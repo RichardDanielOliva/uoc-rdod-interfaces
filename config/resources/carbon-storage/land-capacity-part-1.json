@@ -1,0 +1,25 @@
+{
+    "section": "carbonStorage",
+    "title": "Land Capacity - I",
+    "resume": "The injected CO2 needs pore space for storage. Is the storage site fit to store a given amount of CO2. What land area needs to be covered?",
+    "description": [
+        {
+            "type": "text",
+            "content": "In this video, we describe how TKRISK can be used to quantify the risk associated with carbon sequestration in geologic formations. The evaluation of underground storage capacity is essential to addressing liability questions such as the purchase of the mineral rights (or pore space) under the land area that may be impacted by sequestration activities.<br><br>We use the following reference publication: ''Reservoir characterization and lithostratigraphic division of the Mount Simon Sandstone (Cambrian): Implications for estimations of geologic sequestration storage capacity'' by Cristian R. Medina and John A. Rupp. The paper describes the calculation of such capacity using geological, petrophysical and fluid properties. We model the storage capacity (defined as an explicit formula in the paper) using TKRISK''s deterministic node.<br><br>This example shows how one can build and calibrate a model based on both data and expert knowledge while propagating uncertainty through the nodes of the PGM. This demonstrates the versatility of Bayesian network to model risk for a variety of engineering applications.</span><br><br>Let us review how TKRISK can be used to compute physical risk on an important process for climate change mitigation. Carbon dioxide or CO2 is a major greenhouse gas, and the main cause of global warming. One of the proposed solution to mitigate its effect is CO2 sequestration.<br>As illustrated in this picture (ref: www.greencitytimes.com), the flue CO2 gas is captured at an emission source, which could be a power plant, an ethanol plant or a cement factory, and then transported to a site where it is injected and stored into deep geological formations.<br>Although a proven technology, we must properly characterize and quantify technical risks. We demonstrate how to do so with a simple example. Reference paper: ''Reservoir characterization and lithostratigraphic division of the Mount Simon Sandstone (Cambrian): Implications for estimations of geologic sequestration storage capacity'' Cristian R. Medina and John A. Rupp<br><br>Problem statement:<br>1- Is there enough underground pore space to store the CO2 produced by the source?<br>2- How far does the CO2 injected travel laterally?<br><br>This helps address the question of the land area under which mineral rights (or pore space) have to be purchased to use as storage. Our hypothesis are the following:<br>1- The source of CO2 produces about 10 million tons per year.<br>2- The depth at which we are injected, injecting is between 1,000 and 4,000 meters<br>3- Reservoir thickness is between 100 and 400 meters.<br><br>According to the authors, one of the key components of this problem is the storage capacity as seen in this equation. We include this into our hypothesis and write that relationship: SC is equal to H multiplied by Phi, multiply by Rho CO2 which is a function of pressure and temperatures multiplied by the efficiency the units for h are meter, the porosity is just the void in the rock so it is dimensionless. The density is in ton per cubic meter. The efficiencies is dimensionless. This gives us a storage capacity, in tons per square meter.<br><br>This helps define the land area any liability for the underground storage of CO2 has to cover We now construct the graph associated with that formula. The first node is the porosity on a scale from 0.05 to 1 Because porosity cannot exceed a hundred percent. Then the reservoir thickness with values around 200m, that range between 10 and 300 meters And for density, you have values around 600 ranging from 200 to 900 kilogram per cubic meter And the efficiency factor which varies between 1% and 10% We now add a new node, which is a deterministic node (this is why it is represented with a square) that enforces a formula based on all of its parents nodes The product as specified in the formula.<br>"
+        }
+    ],
+    "product": "tkrisk",
+    "image": "land-capacity-part-1",
+    "icon": "carbon",
+    "videoUrl": "https://www.youtube.com/embed/K5XrmeE5FUo",
+    "nextVideo": "land-capacity-part-2",
+    "relatedVideos": ["land-capacity-part-2", "plume-migration-part-1", "pressure-build-up-part-1", "decision-part-1"],
+    "relatedContent": [{
+        "title": "Related Products",
+        "items": [ { "title": "TKRISK", "url": "/products/tkrisk"}]
+    },
+    {
+        "title": "References",
+        "items": [ { "title": "", "url": ""} ]
+    }]
+}

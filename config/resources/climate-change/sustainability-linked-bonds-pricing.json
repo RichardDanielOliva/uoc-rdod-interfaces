@@ -1,0 +1,60 @@
+{
+    "section": "climateChange",
+    "title": "Sustainability Linked Bonds Pricing",
+    "author": ["Djellil Bouzidi, Emena Advisory", "Denis Papaioannou, company"],
+    "resume": "Implying Market Sustainability Performance Target Default Probability",
+    "description": [
+        {
+            "type": "text",
+            "content": "<div class=\"subtitle\"> Summary </div><p>A Sustainability-Linked Bond (SLB) is a bond whose financial characteristics are tied (“linked”) to specific Sustainability Performance Targets (SPT). If a target is missed, the yield on the bond increases. In other words, issuers will be held to their promises, and if they fail to deliver there will be a financial penalty. This penalty generally takes the form of a step-up coupon.</p><p>SLBs are quickly developing in the corporate space. The market is expected to grow steadily in 2021 with total issuance ranging between 100 and 150 billion $.</p><p>Compared to classic bonds, pricing SLBs involves a new risk component, that of SPT default. The latter is to be modelled on top of the issuer’s credit default risk. Probabilistic graphical models provide a simple yet powerful means to model jointly credit and SPT default for SLBs pricing and risk modelling and in particular the validation of SPT default probability estimator.</p><div class=\"subtitle\"> SLB Modelling - Correlating SPT and Credit Default</div>"
+        },
+        {
+            "type": "image",
+            "content": {
+                "id": "sustainability-linked-bonds-pricing-a",
+                "title": "SLB modelling and pricing example assuming independence between SPT and credit risk (left) and correlating them (right)"
+            }
+        },
+        {
+            "type": "text",
+            "content": "<p><div class=\"subtitle\">Implying Market SPT Default Probability</div>The probabilistic graphical modelling framework defined above allows estimating the error in the SPT default probability formula obtained assuming independence between SPT default and credit default.</p>"
+        },
+        {
+            "type": "image",
+            "content": {
+                "id": "sustainability-linked-bonds-pricing-b",
+                "title": "Absolute error between SPT default probability approximate formula (assuming independence between SPT and credit default) and actual"
+            }
+        },
+        {
+            "type": "text",
+            "content": "<p>The above results are obtained in the case of a hypothetical SLB with SPT default probability of 9%. The diagonal corresponds to cases where SPT and credit events are independent for which we recover accurately the 9% SPT default probability. The worst case corresponds to the fully correlated case (bottom left of the table) where the absolute error reaches 3.42%.</p><p>This result is powerful as it shows limited accuracy loss when assuming SPT and credit independence, under which the SPT default probability can be derived from observable market data.</p>"
+        }
+    ],
+    "product": "tkrisk",
+    "image": "sustainability-linked-bonds-pricing",
+    "icon": "climate",
+    "nextVideo": "plume-migration-part-1",
+    "relatedVideos": ["plume-migration-part-1", "land-capacity-part-1", "pressure-build-up-part-1"],
+    "relatedContent": [{
+        "title": "Related Products",
+        "items": [ { "title": "TKRISK", "url": "/products/tkrisk"}]
+    },
+    {
+        "title": "References",
+        "items": [ 
+            { 
+                "title": "Sovereign Sustainability-Linked Bonds - Opportunities, challenges and pricing considerations", 
+                "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3919159"
+            },
+            { 
+                "title": "Sustainability-Linked Bond Principles", 
+                "url": "https://www.icmagroup.org/assets/documents/Regulatory/Green-Bonds/June-2020/Sustainability-Linked-Bond-Principles-June-2020-171120.pdf"
+            },
+            { 
+                "title": "Green, Social and Sustainability (linked) Bonds", 
+                "url": "https://www.pwc.lu/en/sustainable-finance/docs/pwc-green-social-and-sustainability-linked-bonds.pdf"
+            }  
+        ]
+    }]
+}
