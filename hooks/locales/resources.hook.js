@@ -4,7 +4,7 @@ export const AVAILABLE_CATEGORIES_OPTIONS = [
   { value: 'all', label: 'All' },
   { value: 'music', label: 'Música' },
   { value: 'sport', label: 'Deportes' },
-  { value: 'theater', label: 'Teatros y comedia' }
+  { value: 'theater', label: 'Teatro y comedia' }
 ]
 
 //export const COMMON_DESCRIPTION = 'hello world';

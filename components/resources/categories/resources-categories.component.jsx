@@ -118,7 +118,7 @@ export const getOptions = (id) => {
       return <MusicOptions />
     case 'sport':
       return <SportOptions />
-    case 'theather':
+    case 'theater':
       return <TheatherOptions />
       default:
           return <SportOptions />
