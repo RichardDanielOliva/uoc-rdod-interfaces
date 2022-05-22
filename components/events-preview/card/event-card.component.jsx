@@ -4,7 +4,7 @@ import HeaderCard from '../../commons/custom-header-card/header-card.component';
 const EventPreviewCard = () => {
   return (
     <HeaderCard 
-      title={'Vive una nueva experiencia en Madrid!'}
+      title={'Descrube nuevas experiencias en tu ciudad!'}
       imageOpacity={0.10}
       image={{
         src: '/images/madrid2.jpg'

@@ -5,7 +5,7 @@ const ResourcesCard = () => {
   return (
     <HeaderCard 
       mainClassName={'home-header-card'}
-      title={'Vive una nueva experiencia en Madrid!'}
+      title={'Descrube nuevas experiencias en tu ciudad!'}
       description={'Encuentra tu proximo evento'}
       image={{
         src: '/images/madrid.jpg'

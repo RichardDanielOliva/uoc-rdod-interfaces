@@ -22,9 +22,9 @@ const CustomMap = ({latitude, logitude, zoom=12, data=[]}) => {
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/" target="_blank">Humanitarian OpenStreetMap Team</a> hosted by <a href="https://openstreetmap.fr/" target="_blank">OpenStreetMap France</a>'
                     />
                     
-                    {data.map(({geometry, ...props}) => {
+                    {data.map(({geometry, ...props}, index) => {
                         return (
-                            <Marker position={geometry.coordinates}>
+                            <Marker position={geometry.coordinates} key={`market-${index}`}>
                                 <Popup closeButton={false}>
                                     <EventCard event={props}/>
                                 </Popup>
