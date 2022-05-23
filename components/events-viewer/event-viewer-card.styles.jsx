@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { DefaultCardContainerStyle, redIntenseCompany, secondaryColor, secondaryLightColor } from '../../config/styles/common-styles';
 
 export const EventViewerContainer = styled.div`
@@ -180,6 +180,12 @@ export const ContentOptionsButton = styled.button`
     color: ${redIntenseCompany};
     cursor: pointer;
   }
+
+  
+  ${props => props.isSelected && css`
+  fill: ${redIntenseCompany};
+  color: ${redIntenseCompany};
+`}
 `;
 
 export const ContentOptionsContainer = styled.button`

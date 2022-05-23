@@ -9,7 +9,7 @@ import { IoArrowForwardCircleOutline, IoAddCircleOutline, IoSunnyOutline, IoDocu
 import { RiHeartPulseLine, RiToolsLine, RiVirusLine } from "react-icons/ri";
 import { VscCheck, VscClose } from "react-icons/vsc";
 import { GiFactory, GiWindTurbine, GiSellCard } from "react-icons/gi";
-import { BsGraphUp, BsFillShareFill, BsHeart } from "react-icons/bs";
+import { BsGraphUp, BsFillShareFill, BsHeart, BsFillHeartFill } from "react-icons/bs";
 import { AiOutlineSafety } from "react-icons/ai";
 import { MdOndemandVideo, MdOutlineDesignServices, MdLightbulbOutline, MdLocationOn, MdComputer, MdDateRange } from "react-icons/md";
 import { BiMessageDetail, BiSearchAlt2 } from "react-icons/bi";
@@ -148,6 +148,11 @@ export const ShareIcon = styled(BsFillShareFill)`
 `
 
 export const HeartIcon = styled(BsHeart)`
+    width: 100%;
+    height: 100%;
+`
+
+export const FillHeartIcon = styled(BsFillHeartFill)`
     width: 100%;
     height: 100%;
 `
