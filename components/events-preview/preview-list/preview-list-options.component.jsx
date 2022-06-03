@@ -7,22 +7,28 @@ const EventListOptions = ({ viewInList, setViewInList }) => {
     <EventListOptionsContainer>
       <ListOptionsInputsContainer>
         <ListInputContainer>
-        <IconContainer>
+        <IconContainer htmlFor={'palabra-clave-input-id'}>
             <SearchIcon />
           </IconContainer>
-          <CustomInput placeholder={'Palabra clave'}/>
+          <CustomInput 
+            id={'palabra-clave-input-id'}
+            placeholder={'Palabra clave'}/>
         </ListInputContainer>
         <ListInputContainer >
-        <IconContainer>
+        <IconContainer htmlFor={'palabra-Ubicación-input-id'}>
             <LocationIcon />
           </IconContainer>
-        <CustomInput placeholder={'Ubicación'}/>
+        <CustomInput
+                      id={'palabra-Ubicación-input-id'}
+          placeholder={'Ubicación'}/>
         </ListInputContainer >
         <ListInputContainer >
-        <IconContainer>
+        <IconContainer htmlFor={'palabra-fecha-input-id'}>
             <DateIcon />
           </IconContainer>
-        <CustomInput placeholder={'Fecha'}/>
+        <CustomInput 
+                                id={'palabra-fecha-input-id'}
+          placeholder={'Fecha'}/>
         </ListInputContainer >
         <CustomButton onClick={() => {}}>
           Buscar

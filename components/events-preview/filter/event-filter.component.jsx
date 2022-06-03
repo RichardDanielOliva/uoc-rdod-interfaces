@@ -4,10 +4,11 @@ import CustomSelectInput from '../../commons/custom-inputs/custom-select-input.c
 import { EventPreviewFilterContainer, OptionsContainer, InputOptionContainer } from '../event-card.styles';
 
 
-const CommonsOptions = () => {
+const CommonsOptions = ({ category }) => {
   return (<>
           <InputOptionContainer>
           <CustomSelectInput
+            id={'custom-input-fecha-filter' + category}
             label={'Fecha'}
             value={'All'}
             options={[{ value: 'All' }]}
@@ -15,6 +16,7 @@ const CommonsOptions = () => {
         </InputOptionContainer>
       <InputOptionContainer>
         <CustomSelectInput
+          id={'custom-input-precio-filter' + category}
           label={'Precio'}
           value={'All'}
           options={[{ value: 'All' }]}
@@ -27,6 +29,7 @@ const MusicOptions = () => {
   return (<>
       <InputOptionContainer>
           <CustomSelectInput
+                    id='custom-input-musica-filter'
             label={'Tipo de música'}
             value={'All'}
             options={[{ value: 'All' }]}
@@ -34,6 +37,7 @@ const MusicOptions = () => {
         </InputOptionContainer>
         <InputOptionContainer>
           <CustomSelectInput
+          id='custom-input-duracion-filter'
             label={'Duración'}
             value={'All'}
             options={[{ value: 'All' }]}
@@ -46,6 +50,7 @@ const SportOptions = () => {
   return (<>
         <InputOptionContainer>
           <CustomSelectInput
+                    id='custom-input-deporte-filter'
             label={'Tipo de deporte'}
             value={'All'}
             options={[{ value: 'All' }]}
@@ -58,11 +63,13 @@ const TheaterOptions = () => {
   return (<>
           <InputOptionContainer>
           <CustomSelectInput
+                          id='custom-input-museo-filter'
             label={'Museo'}
             value={'All'}
             options={[{ value: 'All' }]}
           />
                     <CustomSelectInput
+                                 id='custom-input-idioma-filter'
             label={'Idioma'}
             value={'All'}
             options={[{ value: 'All' }]}
@@ -91,13 +98,14 @@ const EventPreviewFilter = ({ category, setCategory }) => {
     <OptionsContainer>
       <InputOptionContainer>
         <CustomSelectInput
+                     id='custom-input-categoria-filter'
           label={'Categoria'}
           value={category}
           options={AVAILABLE_CATEGORIES_OPTIONS}
           onChange={(event) => setCategory(event.target.value)}
         />
       </InputOptionContainer>
-      <CommonsOptions />
+      <CommonsOptions category={category}/>
       {getCategoryOptions(category)}
     </OptionsContainer>
   </EventPreviewFilterContainer>

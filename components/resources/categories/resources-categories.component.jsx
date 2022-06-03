@@ -16,10 +16,11 @@ import {
   InputOptionContainer
 } from './resources-categories.style';
 
-const CommonsOptions = () => {
+const CommonsOptions = ({ category }) => {
   return (<>
           <InputOptionContainer>
           <CustomSelectInput
+            id={'custom-input-fecha-filter' + category}
             label={'Fecha'}
             value={'All'}
             options={[{ value: 'All' }]}
@@ -27,6 +28,7 @@ const CommonsOptions = () => {
         </InputOptionContainer>
       <InputOptionContainer>
         <CustomSelectInput
+          id={'custom-input-precio-filter' + category}
           label={'Precio'}
           value={'All'}
           options={[{ value: 'All' }]}
@@ -41,12 +43,13 @@ const PopularesOptions = () => {
       <OptionsContainer>
         <InputOptionContainer>
           <CustomSelectInput
+                              id='custom-input-ciudad-filter'
             label={'Ciudad'}
             value={'All'}
             options={[{ value: 'All' }]}
           />
         </InputOptionContainer>
-        <CommonsOptions />
+        <CommonsOptions category={'populares'}/>
       </OptionsContainer>
     </HelperContainer>
   )
@@ -58,12 +61,13 @@ const SportOptions = () => {
       <OptionsContainer>
         <InputOptionContainer>
           <CustomSelectInput
+                                        id='custom-input-deporte-filter'
             label={'Tipo de deporte'}
             value={'All'}
             options={[{ value: 'All' }]}
           />
         </InputOptionContainer>
-        <CommonsOptions />
+        <CommonsOptions category={'deportes'}/>
       </OptionsContainer>
     </HelperContainer>
   )
@@ -75,6 +79,7 @@ const MusicOptions = () => {
       <OptionsContainer>
       <InputOptionContainer>
           <CustomSelectInput
+                                                  id='custom-input-musica-filter'
             label={'Tipo de música'}
             value={'All'}
             options={[{ value: 'All' }]}
@@ -82,12 +87,13 @@ const MusicOptions = () => {
         </InputOptionContainer>
         <InputOptionContainer>
           <CustomSelectInput
+                                                  id='custom-input-duracion-filter'
             label={'Duración'}
             value={'All'}
             options={[{ value: 'All' }]}
           />
         </InputOptionContainer>
-        <CommonsOptions />
+        <CommonsOptions category={'musica'}/>
       </OptionsContainer>
     </HelperContainer>
   )
@@ -99,12 +105,13 @@ const TheatherOptions = () => {
       <OptionsContainer>
         <InputOptionContainer>
           <CustomSelectInput
+                                                  id='custom-input-museo-filter'
             label={'Museo'}
             value={'All'}
             options={[{ value: 'All' }]}
           />
         </InputOptionContainer>
-        <CommonsOptions />
+        <CommonsOptions category={'museo'}/>
       </OptionsContainer>
     </HelperContainer>
   )

@@ -72,7 +72,7 @@ export const ListInputContainer = styled.div`
   margin: 0 25px 0 0;
 `;
 
-export const IconContainer = styled.div`
+export const IconContainer = styled.label`
   position: relative;
   display: flex;
   align-items: center;

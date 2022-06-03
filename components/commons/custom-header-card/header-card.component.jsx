@@ -33,7 +33,7 @@ const HeaderCard = ({title, description, links, backgroundOpacity, image, imageO
 
       {image && <CustomBackgroundImage 
       src={image.src}
-      alt={image.alt}
+      alt={image.alt ? image.alt : `text-alternativo-${image.src}`}
       opacity={imageOpacity}
       gradient={imageGradient}/>}
     </CardContainer>
